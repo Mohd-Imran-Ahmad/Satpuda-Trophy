@@ -1,28 +1,67 @@
 body {
-    font-family: Arial;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
     text-align: center;
-    background: #f5f5f5;
 }
 
 h1 {
-    color: darkblue;
+    margin-bottom: 5px;
+    font-size: 36px;
 }
 
-#teamBox {
-    margin-top: 20px;
-    padding: 20px;
-    background: white;
-    display: block;
+.subtitle {
+    margin-bottom: 20px;
+    color: #ccc;
 }
 
 button {
     padding: 10px 20px;
-    background: darkblue;
-    color: white;
     border: none;
+    background: #00c6ff;
+    color: black;
+    font-weight: bold;
     cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: 0.3s;
 }
 
 button:hover {
-    background: navy;
+    background: #00a2d3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #0072ff;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+tr:hover {
+    background: #d1ecff;
+    transition: 0.2s;
 }
