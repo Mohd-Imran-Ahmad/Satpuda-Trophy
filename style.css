@@ -1,67 +1,101 @@
+/* Background with stadium feel */
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #0b6623, #001a00);
     color: white;
 }
 
+/* Main container */
 .container {
     width: 90%;
-    max-width: 900px;
+    max-width: 950px;
     margin: 40px auto;
     text-align: center;
 }
 
+/* Title */
 h1 {
-    margin-bottom: 5px;
-    font-size: 36px;
+    font-size: 42px;
+    color: #00ffcc;
+    text-shadow: 0 0 15px #00ffcc;
 }
 
 .subtitle {
+    color: #ddd;
     margin-bottom: 20px;
-    color: #ccc;
 }
 
+/* Button */
 button {
-    padding: 10px 20px;
+    padding: 12px 25px;
+    font-size: 16px;
     border: none;
-    background: #00c6ff;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ffcc00, #ff6600);
     color: black;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.7);
     transition: 0.3s;
 }
 
 button:hover {
-    background: #00a2d3;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 165, 0, 1);
 }
 
+/* Table design */
 table {
     width: 100%;
     border-collapse: collapse;
-    background: white;
-    color: black;
-    border-radius: 10px;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 12px;
     overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,255,100,0.4);
 }
 
+/* Header */
 th {
-    background: #0072ff;
-    color: white;
-    padding: 12px;
+    background: linear-gradient(90deg, #00c853, #64dd17);
+    color: black;
+    padding: 14px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
+/* Rows */
 td {
-    padding: 10px;
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
+/* Alternate rows */
 tr:nth-child(even) {
-    background: #f2f2f2;
+    background: rgba(255,255,255,0.05);
 }
 
+/* Hover effect like highlight player */
 tr:hover {
-    background: #d1ecff;
+    background: rgba(0,255,150,0.2);
+    transform: scale(1.01);
     transition: 0.2s;
+}
+
+/* Price highlight */
+td:last-child {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Glow animation */
+@keyframes glow {
+    0% { box-shadow: 0 0 10px #00ffcc; }
+    50% { box-shadow: 0 0 25px #00ffcc; }
+    100% { box-shadow: 0 0 10px #00ffcc; }
+}
+
+table {
+    animation: glow 3s infinite;
 }
