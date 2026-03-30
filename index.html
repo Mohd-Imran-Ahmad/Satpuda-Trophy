@@ -52,3 +52,59 @@ function toggleTable() {
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Betul Academy Squad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🏏 Betul Academy</h1>
+        <p class="subtitle">Squad Auction List</p>
+
+        <button onclick="toggleTable()">Hide / Show Players</button>
+
+        <div id="tableBox">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Khiladi Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>PINKESH RAJPUT</td><td>₹2,500</td></tr>
+                    <tr><td>2</td><td>VARUN VERMA</td><td>₹4,500</td></tr>
+                    <tr><td>3</td><td>GULSHAN MANKAR</td><td>₹500</td></tr>
+                    <tr><td>4</td><td>MOHD IMRAN</td><td>₹2,000</td></tr>
+                    <tr><td>5</td><td>HIMANSHU KAJODE (BHEEMA)</td><td>₹500</td></tr>
+                    <tr><td>6</td><td>MUNVAR QURESHI</td><td>₹10,000</td></tr>
+                    <tr><td>7</td><td>AAMIR SIDDIQUI</td><td>₹500</td></tr>
+                    <tr><td>8</td><td>SANDEEP MALVI</td><td>₹1,000</td></tr>
+                    <tr><td>9</td><td>SHEHZAD KHAN</td><td>₹10,000</td></tr>
+                    <tr><td>10</td><td>NIKHIL RAGHUWANSHI</td><td>₹2,500</td></tr>
+                    <tr><td>11</td><td>SOHAIL KHAN</td><td>₹3,500</td></tr>
+                    <tr><td>12</td><td>FAISAL</td><td>₹2,500</td></tr>
+                    <tr><td>13</td><td>BITTU BHAU</td><td>₹4,000</td></tr>
+                    <tr><td>14</td><td>FAIZAL AHMED</td><td>₹500</td></tr>
+                    <tr><td>15</td><td>VASU TEJI</td><td>₹3,000</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+<script>
+function toggleTable() {
+    let box = document.getElementById("tableBox");
+    box.style.display = (box.style.display === "none") ? "block" : "none";
+}
+</script>
+
+</body>
+</html>
+
